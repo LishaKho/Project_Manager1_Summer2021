@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 require('./config/mongoose.config');
 
 // add routes to listen
-const restaurantRoutes = require('./routes/restaurant.routes');
-restaurantRoutes(app);  // run the routes function and pass in our app server
+const productRoutes = require('./routes/product.routes');
+productRoutes(app);  // run the routes function and pass in our app server
 
 // start the app server listening
 app.listen(8000, () => {
